@@ -1,6 +1,6 @@
-## Ciência dos Dados
+# Ciência dos Dados
 
-# Aluno: Lucas Cardoso Fontenla
+## Aluno: Lucas Cardoso Fontenla
 
 Curso: Engenharia Mecatrônica
 
