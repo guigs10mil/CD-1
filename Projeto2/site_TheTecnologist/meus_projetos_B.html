@@ -116,15 +116,18 @@
 					<a href="https://linkedin.com" target="_blank" class="icon"><img src="img/linkedin-icon.png" width="40" height="40" alt="linkedin icon"></a>
 				</div>
 			</div>
-		</div>
-    	
-    	<script>
+		</div>    	
+	</body>
+
+	<script>
+		function X(){
     		if(sessionStorage.getItem('projeto') === 'ModSim'){
     			confirm('Ache o projeto "COMO EVACUAR UM ARRANHA-CÉU RAPIDAMENTE" do curso de Modelagem em Simulação do Mundo Físico');
     		} else{
     			confirm('Ache o projeto "NASA SINGULARITY" do curso de Grandes Desafios da Engenharia');
     		}
-    	</script>
-    	
-	</body>
+    	}
+    	setTimeout(X, 1000)
+	</script>
+	
 </html>

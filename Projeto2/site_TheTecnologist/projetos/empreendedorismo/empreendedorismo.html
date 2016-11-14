@@ -1,11 +1,45 @@
 <!DOCTYPE html>
 <html>
-<head>
+	<head>
+		<script src="https://www.gstatic.com/firebasejs/3.5.3/firebase.js"></script>
+
+		<script>
+		      // Initialize Firebase
+		      var config = {
+		        apiKey: "AIzaSyDTOSkBrgxh7-VlFcYseQuOUC1G2LC2a-I",
+		        authDomain: "cd-teste-ab.firebaseapp.com",
+		        databaseURL: "https://cd-teste-ab.firebaseio.com",
+		        storageBucket: "cd-teste-ab.appspot.com",
+		        messagingSenderId: "786413939013"
+		      };
+		      firebase.initializeApp(config);
+    	</script>
+
+    	<script src="../../scripts/main.js"></script>
+    	<script>
+    		var vs = sessionStorage.getItem('vs');
+
+    		function sendInfo(){
+    			console.log('OK');
+
+    			var proj = sessionStorage.getItem('projeto');
+    			console.log(proj)
+
+    				if(proj === 'GDE'){
+    					var projeto = 'GDE';
+    					console.log('Click OK GDE');
+    					envia("final", sessionStorage.getItem('user_id'), Date.now(), sessionStorage.getItem('vs'), projeto);
+    					window.location.replace("../../agradecimento.html");
+    				}
+    			}
+
+    	</script>
+
 	<meta charset="UTF-8">
 	<link rel="stylesheet" type="text/css" href="css/reset.css">
 	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
-	<link rel="stylesheet" type="text/css" href="css/dinamicas.css">
-	<title>Simulações</title>
+	<link rel="stylesheet" type="text/css" href="css/social.css">
+	<title>Empreendedorismo</title>
 </head>
 <body>
 	<nav class="navbar navbar-default">
@@ -25,9 +59,14 @@
 		<div class="projects">
 		<div class="row">
 			<div class="col-sm-4 celula" id="first">
-					<a href="projetos/elevador.html"><img src="img/previsoes_elevador.jpeg" width="300" height="300"></a>
-					<a href="projetos/elevador.html"><p class="text">Como evacuar um arranha-céu rapidamente?</p></a>
-				</div>
+				<img src="../programacao/img/capa_Tug_War.png" width="300" height="300">
+				<a href="../programacao/projetos/cabo_guerra.html"><p>TugWar</p></a>
+			</div>
+			<div class="col-sm-4 celula" id="first">
+				<a href="../../agradecimento.html" onclick="sendInfo();"><img src="img/singu.png" width="300" height="300"></a>
+				<a href="../../agradecimento.html" onclick="sendInfo();"><p>NASA - Singularity</p></a>
+			</div>
+		</div>
 		</div>
 		<div>
 			<footer>
