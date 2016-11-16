@@ -4114,6 +4114,20 @@
       "tipo" : "inicio",
       "user_id" : 3387616100,
       "versao" : "A"
+    },
+    "-KW7sfnNg9L8EECXtfGy" : {
+      "projeto" : "GDE",
+      "tempo" : 1478691568855,
+      "tipo" : "inicio",
+      "user_id" : 4122330881,
+      "versao" : "A"
+    },
+    "-KW7sj7CCvioBIkMRNWu" : {
+      "projeto" : "GDE",
+      "tempo" : 1478691584736,
+      "tipo" : "escolha_categoria",
+      "user_id" : "4122330881",
+      "versao" : "A"
     }
   }
 }
